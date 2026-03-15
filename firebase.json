@@ -1,6 +1,5 @@
 {
   "hosting": {
-    
     "predeploy": [
       "git add .",
       "git commit -m \"predeploy automated commit\" --allow-empty",
