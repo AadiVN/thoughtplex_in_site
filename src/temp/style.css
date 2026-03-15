@@ -1,0 +1,146 @@
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f7f9fc;
+color:#222;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav a{
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-stats{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:40px 0;
+}
+
+.hero-stats div{
+text-align:center;
+}
+
+.btn-primary{
+background:#ff6b00;
+padding:14px 28px;
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+.features{
+padding:80px 20px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.tools{
+padding:80px 20px;
+text-align:center;
+}
+
+.tools-grid span{
+background:#eef2ff;
+padding:12px 20px;
+margin:10px;
+display:inline-block;
+border-radius:6px;
+}
+
+.outcomes{
+padding:80px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.cta{
+text-align:center;
+padding:80px 20px;
+background:#1e3a8a;
+color:white;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+color:white;
+}
+
+.hero-small{
+text-align:center;
+padding:80px 20px;
+background:#1e3a8a;
+color:white;
+}
+
+.curriculum{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.webinar{
+display:flex;
+gap:40px;
+padding:60px;
+max-width:1000px;
+margin:auto;
+}
+
+.form input,.form select{
+display:block;
+width:100%;
+margin-bottom:12px;
+padding:12px;
+}
+
+.form button{
+background:#ff6b00;
+color:white;
+padding:14px;
+border:none;
+width:100%;
+}

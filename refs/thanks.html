@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - ThoughtPlex India</title>
+    <meta name="robots" content="noindex, follow">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        @keyframes checkmark {
+            0% { stroke-dashoffset: 100; }
+            100% { stroke-dashoffset: 0; }
+        }
+        .checkmark {
+            stroke-dasharray: 100;
+            animation: checkmark 1s ease-in-out forwards;
+        }
+        #countdown {
+            font-weight: bold;
+            color: #4F46E5;
+        }
+        .fadeOut {
+            animation: fadeOut 0.5s ease-out forwards;
+        }
+        @keyframes fadeOut {
+            to { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
+            <!-- Animated Checkmark -->
+            <div class="w-20 h-20 mx-auto mb-6">
+                <svg class="w-full h-full" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="48"
+                            fill="none" stroke="#4F46E5"
+                            stroke-width="4"/>
+                    <path class="checkmark"
+                          d="M30 50 L45 65 L70 35"
+                          fill="none"
+                          stroke="#4F46E5"
+                          stroke-width="4"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <!-- Dynamic Content Container -->
+            <div id="thankYouContent">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">
+                    Thank You!
+                </h1>
+
+                <p class="text-gray-600 mb-6" id="messageText">
+                    <!-- Will be filled by JavaScript -->
+                </p>
+            </div>
+
+            <div class="bg-indigo-50 rounded-lg p-4 mb-6">
+                <p class="text-indigo-800">
+                    Redirecting to homepage in <span id="countdown">5</span> seconds...
+                </p>
+            </div>
+
+            <a href="index.html"
+               class="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                Return to Homepage Now
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Get form type from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const formType = urlParams.get('form_type');
+        const messageText = document.getElementById('messageText');
+
+        // Set appropriate message based on form type
+        if (formType === 'newsletter') {
+            messageText.textContent = 'Thank you for subscribing to our newsletter! We'll keep you updated with our latest insights and news.';
+        } else {
+            messageText.textContent = 'Your message has been sent successfully. We'll get back to you within 24-48 business hours.';
+        }
+
+        // Countdown and redirect
+        let timeLeft = 5;
+        const countdownDisplay = document.getElementById('countdown');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownDisplay.textContent = timeLeft;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                document.body.classList.add('fadeOut');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 500);
+            }
+        }, 1000);
+
+        // Start countdown immediately
+        countdownDisplay.textContent = timeLeft;
+    </script>
+</body>
+</html>

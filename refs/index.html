@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>ThoughtPlex India - Software Consultancy & Architecture Solutions in Bangalore</title>
+    <meta name="title" content="ThoughtPlex India - Software Consultancy & Architecture Solutions">
+    <meta name="description"
+        content="Premium software consultancy and architecture firm in Bangalore specializing in enterprise solutions, microservices, cloud architecture, and digital transformation. Expert software architects and consultants.">
+    <meta name="keywords"
+        content="software consultancy bangalore, software architecture india, enterprise solutions, digital transformation, cloud architecture, microservices consulting, IT consulting bangalore, software development bangalore">
+    <meta name="author" content="ThoughtPlex India Private Limited">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thoughtplex.in/">
+    <meta property="og:title" content="ThoughtPlex India - Software Consultancy & Architecture Solutions">
+    <meta property="og:description"
+        content="Premium software consultancy and architecture firm in Bangalore specializing in enterprise solutions and digital transformation.">
+    <meta property="og:image" content="https://thoughtplex.in/images/thoughtplex-banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thoughtplex.in/">
+    <meta property="twitter:title" content="ThoughtPlex India - Software Consultancy & Architecture">
+    <meta property="twitter:description"
+        content="Premium software consultancy and architecture firm in Bangalore specializing in enterprise solutions and digital transformation.">
+    <meta property="twitter:image" content="https://thoughtplex.in/images/thoughtplex-banner.jpg">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Bangalore">
+    <meta name="geo.position" content="12.9716;77.6076">
+    <meta name="ICBM" content="12.9716, 77.6076">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thoughtplex.in/">
+
+    <!-- Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ThoughtPlex India Private Limited",
+      "image": "https://thoughtplex.in/images/thoughtplex-logo.png",
+      "description": "Premium software consultancy and architecture firm specializing in enterprise solutions, microservices, and digital transformation.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#123, Brigade Road",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.9716,
+        "longitude": 77.6076
+      },
+      "url": "https://thoughtplex.in",
+      "telephone": "+91-80-1234-5678",
+      "priceRange": "₹₹₹",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://www.linkedin.com/company/thoughtplex",
+        "https://twitter.com/thoughtplex",
+        "https://github.com/thoughtplex"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Custom Styles */
+        .hero-section {
+            background-image: linear-gradient(rgba(59, 130, 246, 0.8), rgba(37, 99, 235, 0.9));
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #2563eb;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Accessibility */
+        .skip-to-main-content {
+            position: absolute;
+            left: -9999px;
+            z-index: 999;
+            padding: 1em;
+            background-color: white;
+            color: black;
+            opacity: 0;
+        }
+
+        .skip-to-main-content:focus {
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main-content">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="/images/logo.png" alt="ThoughtPlex Logo" class="h-8 mr-3">
+                    <span class="text-2xl font-bold text-gray-800">ThoughtPlex</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#services" class="nav-link text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#why-us" class="nav-link text-gray-600 hover:text-blue-600">Why Us</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-gray-600 text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#services" class="block px-3 py-2 text-gray-600 hover:text-blue-600">Services</a>
+                    <a href="#why-us" class="block px-3 py-2 text-gray-600 hover:text-blue-600">Why Us</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInUp">
+                Architecting Tomorrow's Solutions
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+                Software Consultancy & Architecture Solutions in Bangalore
+            </p>
+            <div class="animate-fadeInUp" style="animation-delay: 0.4s;">
+                <a href="#contact"
+                    class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-flex items-center">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    About ThoughtPlex
+                </h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    ThoughtPlex India Private Limited is a premier software consultancy and architecture firm based in
+                    the heart of India's technology hub, Bangalore. With over two decades of collective experience, we
+                    specialize in transforming complex business challenges into elegant technical solutions.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Expert Team</h3>
+                        <p class="text-gray-600">
+                            Seasoned architects and consultants with Fortune 500 experience
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Proven Track Record</h3>
+                        <p class="text-gray-600">
+                            Successful delivery of complex enterprise solutions
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                        <div class="text-blue-600 text-4xl mb-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Innovation Focus</h3>
+                        <p class="text-gray-600">
+                            Cutting-edge solutions using latest technologies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Our Services
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Software Architecture</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Microservices Design</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud Architecture</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>System Integration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Cloud Solutions</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud Migration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>DevOps Implementation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Scalability Planning</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cost Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Digital Transformation</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Legacy Modernization</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Process Automation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>API Strategy</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Digital Innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Why Choose ThoughtPlex
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-award text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Industry Expertise</h3>
+                            <p class="text-gray-600">
+                                Deep domain knowledge across fintech, healthcare, e-commerce, and enterprise systems
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Dedicated Team</h3>
+                            <p class="text-gray-600">
+                                Experienced professionals committed to your project's success
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-clock text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Timely Delivery</h3>
+                            <p class="text-gray-600">
+                                Proven track record of on-time project completion
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-handshake text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Client-Centric</h3>
+                            <p class="text-gray-600">
+                                Focused on building long-term partnerships through excellence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        Get in Touch
+                    </h2>
+                    <p class="text-gray-600">
+                        Let's discuss how we can help transform your business
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                      <form action="https://formspree.io/f/xzzbevwq" method="POST" id="contact-form" class="space-y-6">
+                      <!-- Hidden field to identify form type -->
+                      <input type="hidden" name="form_type" value="contact">
+
+                      <!-- Form redirect -->
+                      <input type="hidden" name="_next" value="/thanks.html">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 text-sm font-semibold mb-2">
+                                    Full Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="John Doe">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" name="_replyto" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="john@example.com">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 text-sm font-semibold mb-2">
+                                    Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="+91 98765 43210">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 text-sm font-semibold mb-2">
+                                    Subject <span class="text-red-500">*</span>
+                                </label>
+                                <select id="subject" name="subject" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200">
+                                    <option value="">Please select...</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Software Architecture Consultation">Software Architecture
+                                        Consultation</option>
+                                    <option value="Cloud Solutions">Cloud Solutions</option>
+                                    <option value="Digital Transformation">Digital Transformation</option>
+                                    <option value="Partnership Opportunity">Partnership Opportunity</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 text-sm font-semibold mb-2">
+                                    Message <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 resize-none"
+                                    placeholder="How can we help you?"></textarea>
+                                <div class="text-sm text-gray-500 mt-1">
+                                    <span id="charCount">0</span>/1000 characters
+                                </div>
+                            </div>
+
+                            <!-- Form configuration -->
+                            <input type="hidden" name="_next" value="thanks.html">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <input type="text" name="_gotcha" style="display:none">
+
+                            <div id="form-status" class="hidden"></div>
+
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition duration-300 flex items-center justify-center">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">
+                            Contact Information
+                        </h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Address</h4>
+                                    <p class="text-gray-600">
+                                        L151 Concorde Silicon Valley <br />
+                                        Electronics City Phase 1, Electronic City<br />
+                                        Karnataka 560100<br />
+                                        India
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Business Hours</h4>
+                                    <p class="text-gray-600">
+                                        Monday - Friday<br>
+                                        9:00 AM - 6:00 PM IST
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Map -->
+                        <!-- <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.0321708106262!2d77.65171159999998!3d12.8391188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b7e764da53f%3A0x2686ab3dbd710ec0!2sConcorde%20Silicon%20Valley%2C%20Electronics%20City%20Phase%201%2C%20Electronic%20City%2C%20Karnataka%20560100!5e0!3m2!1sen!2sin!4v1730478520508!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Main Footer -->
+        <div class="container mx-auto px-6 pt-16 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="/images/logo-white.png" alt="ThoughtPlex Logo" class="h-8 mr-3">
+                        <span class="text-2xl font-bold">ThoughtPlex</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Software consultancy and architecture firm specializing in enterprise solutions,
+                        cloud architecture, and digital transformation.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-white transition duration-300">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-gray-400 hover:text-white transition duration-300">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#why-us" class="text-gray-400 hover:text-white transition duration-300">
+                                Why Choose Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">
+                                L151 Concorde Silicon Valley <br />
+                                Electronics City Phase 1, Electronic City<br />
+                                Karnataka 560100<br />
+                                India
+                            </span>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="max-w-md mx-auto text-center">
+                    <h3 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Stay updated with our latest insights and news
+                    </p>
+                    <form
+                        action="https://formspree.io/f/xzzbevwq"
+                        method="POST"
+                        class="relative"
+                        id="newsletter-form"
+                    >
+                        <!-- Hidden field to identify form type -->
+                        <input type="hidden" name="form_type" value="newsletter">
+
+                        <!-- Form redirect -->
+                        <input type="hidden" name="_next" value="/thanks.html">
+
+                        <div class="flex">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                                class="flex-1 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                            <button
+                                type="submit"
+                                class="bg-blue-600 text-white px-6 py-2 rounded-r-lg hover:bg-blue-700 transition duration-300 flex items-center"
+                            >
+                                <span>Subscribe</span>
+                                <svg id="newsletter-spinner" class="hidden animate-spin ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2024 ThoughtPlex India Private Limited. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/policy.html"
+                            class="text-gray-400 hover:text-white text-sm transition duration-300">
+                            Privacy Policy
+                        </a>
+                        <a href="/terms.html" class="text-gray-400 hover:text-white text-sm transition duration-300">
+                            Terms of Service
+                        </a>
+                        <a href="/sitemap.html" class="text-gray-400 hover:text-white text-sm transition duration-300">
+                            Sitemap
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script>
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            let isMenuOpen = false;
+
+            mobileMenuButton.addEventListener('click', function () {
+                isMenuOpen = !isMenuOpen;
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.innerHTML = isMenuOpen
+                    ? '<i class="fas fa-times text-gray-600 text-2xl"></i>'
+                    : '<i class="fas fa-bars text-gray-600 text-2xl"></i>';
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInside = mobileMenuButton.contains(event.target) ||
+                    mobileMenu.contains(event.target);
+
+                if (!isClickInside && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.innerHTML = '<i class="fas fa-bars text-gray-600 text-2xl"></i>';
+                    isMenuOpen = false;
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+            Array.from(mobileMenuLinks).forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.innerHTML = '<i class="fas fa-bars text-gray-600 text-2xl"></i>';
+                    isMenuOpen = false;
+                });
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+
+                    window.scrollTo({
+                        top: targetPosition - navbarHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active Section Highlight
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (scrollY >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-blue-600');
+                }
+            });
+        });
+
+        // Form Handling
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const submitButton = this.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.innerHTML;
+
+                // Show loading state
+                submitButton.disabled = true;
+                submitButton.innerHTML = `
+                    <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span class="ml-2">Sending...</span>
+                `;
+
+                try {
+                    const response = await fetch(this.action, {
+                        method: 'POST',
+                        body: new FormData(this),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        // Show success message
+                        formStatus.innerHTML = `
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-green-700">Thank you! Your message has been sent successfully.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        this.reset();
+
+                        // Redirect to thank you page after a brief delay
+                        setTimeout(() => {
+                            window.location.href = 'thanks.html';
+                        }, 2000);
+                    } else {
+                        throw new Error(data.error || 'There was an error sending your message');
+                    }
+                } catch (error) {
+                    // Show error message
+                    formStatus.innerHTML = `
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-red-700">${error.message}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } finally {
+                    // Restore button state
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonText;
+                    formStatus.classList.remove('hidden');
+                }
+            });
+
+            // Character counter for message field
+            const messageField = document.getElementById('message');
+            const charCount = document.getElementById('charCount');
+
+            if (messageField && charCount) {
+                messageField.addEventListener('input', function () {
+                    charCount.textContent = this.value.length;
+                    if (this.value.length > 1000) {
+                        this.value = this.value.substring(0, 1000);
+                        charCount.textContent = 1000;
+                    }
+                });
+            }
+        }
+
+        // Animations
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementBottom = element.getBoundingClientRect().bottom;
+
+                if (elementTop < window.innerHeight && elementBottom > 0) {
+                    element.classList.add('animate-fadeInUp');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Utility Functions
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Performance Optimizations
+        const debouncedScroll = debounce(() => {
+            // Handle scroll events
+            animateOnScroll();
+
+            // Update active section in navigation
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-blue-600');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('text-blue-600');
+                }
+            });
+        }, 100);
+
+        window.addEventListener('scroll', debouncedScroll);
+
+        // Handle visibility changes
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                // Pause animations or heavy operations
+            } else {
+                // Resume animations or operations
+                animateOnScroll();
+            }
+        });
+
+        // Clean up function
+        window.addEventListener('beforeunload', () => {
+            // Remove event listeners if necessary
+            window.removeEventListener('scroll', debouncedScroll);
+        });
+    </script>
+
+    <!-- Optional: Analytics Script -->
+    <script>
+        // Replace with your analytics code
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            // Production analytics code here
+        }
+    </script>
+</body>
+
+</html>
