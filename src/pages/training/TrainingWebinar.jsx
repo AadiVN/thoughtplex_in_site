@@ -41,62 +41,18 @@ const TrainingWebinar = () => {
 
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Reserve Your Seat</h2>
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-              <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Full Name</label>
-                <input 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                  id="name" 
-                  placeholder="Enter your full name" 
-                  type="text" 
-                />
-              </div>
-              
-              <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email Address</label>
-                <input 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                  id="email" 
-                  placeholder="Enter your email" 
-                  type="email" 
-                />
-              </div>
-              
-              <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">Phone Number</label>
-                <input 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                  id="phone" 
-                  placeholder="Enter your mobile number" 
-                  type="tel" 
-                />
-              </div>
-              
-              <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="qualification">Highest Qualification</label>
-                <select 
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white" 
-                  id="qualification"
-                >
-                  <option value="">Select Qualification</option>
-                  <option value="B.Tech">B.Tech</option>
-                  <option value="M.Tech">M.Tech</option>
-                  <option value="BSc">BSc</option>
-                  <option value="MSc">MSc</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-
-              <div className="pt-4">
-                <button 
-                  className="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md transform hover:-translate-y-0.5"
-                  type="submit"
-                >
-                  Register for Free Webinar
-                </button>
-              </div>
-              <p className="text-xs text-center text-gray-500 mt-4">By registering, you agree to our Terms & Privacy Policy.</p>
-            </form>
+            <div className="text-center py-8">
+              <p className="text-gray-600 mb-6">Please fill out our secure registration form to book your spot.</p>
+              <a 
+                href="https://forms.gle/pbP7s6Ta4yvAw73x6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md transform hover:-translate-y-0.5"
+              >
+                Go to Registration Form
+              </a>
+              <p className="text-xs text-gray-500 mt-4">Opens in a new window</p>
+            </div>
           </div>
 
         </div>

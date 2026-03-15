@@ -31,9 +31,9 @@ const TrainingHome = () => {
           </div>
         </div>
 
-        <Link to="/training/webinar" className="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+        <a href="https://forms.gle/pbP7s6Ta4yvAw73x6" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
           Reserve Free Webinar Seat
-        </Link>
+        </a>
       </header>
 
       <section className="py-20 px-5 max-w-4xl mx-auto text-center">
@@ -105,9 +105,9 @@ const TrainingHome = () => {
       <section className="py-20 px-5 bg-blue-900 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Start Your AI Career Today</h2>
         <p className="text-xl mb-8 opacity-90">Join the ThoughtPlex India AI & Machine Learning Program</p>
-        <Link to="/training/webinar" className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+        <a href="https://forms.gle/pbP7s6Ta4yvAw73x6" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
           Join Free AI Webinar
-        </Link>
+        </a>
       </section>
 
       <Footer />
