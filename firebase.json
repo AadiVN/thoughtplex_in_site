@@ -1,5 +1,11 @@
 {
   "hosting": {
+    
+    "predeploy": [
+      "git add .",
+      "git commit -m \"predeploy automated commit\" --allow-empty",
+      "git push"
+    ],
     "site": "thoughtplexin",
     "source": ".",
     "ignore": [
