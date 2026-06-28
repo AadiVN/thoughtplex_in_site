@@ -29,7 +29,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="nav-link text-gray-600 hover:text-blue-600">
               Home
             </a>
@@ -56,6 +56,7 @@ const Header = () => {
               onClick={toggleMobileMenu}
               className="text-gray-600 hover:text-gray-800 focus:outline-none"
               aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
             >
               <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
             </button>
@@ -64,24 +65,24 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4">
-            <div className="flex flex-col space-y-4">
-              <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="block text-gray-600 hover:text-blue-600 py-2">
+          <div className="md:hidden mt-4 border-t border-gray-200 pt-4">
+            <div className="flex flex-col space-y-3 bg-white">
+              <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
                 Home
               </a>
-              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="block text-gray-600 hover:text-blue-600 py-2">
+              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
                 About
               </a>
-              <a href="#services" onClick={(e) => scrollToSection(e, '#services')} className="block text-gray-600 hover:text-blue-600 py-2">
+              <a href="#services" onClick={(e) => scrollToSection(e, '#services')} className="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
                 Services
               </a>
-              <a href="#why-us" onClick={(e) => scrollToSection(e, '#why-us')} className="block text-gray-600 hover:text-blue-600 py-2">
+              <a href="#why-us" onClick={(e) => scrollToSection(e, '#why-us')} className="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
                 Why Us
               </a>
-              <a href="#contact" onClick={(e) => scrollToSection(e, '#contact')} className="block text-gray-600 hover:text-blue-600 py-2">
+              <a href="#contact" onClick={(e) => scrollToSection(e, '#contact')} className="block rounded-lg px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
                 Contact
               </a>
-              <Link to="/training" className="block text-blue-600 font-semibold py-2">
+              <Link to="/training" className="block rounded-lg px-3 py-2 text-blue-600 font-semibold hover:bg-gray-50 hover:text-blue-800" onClick={() => setIsMobileMenuOpen(false)}>
                 Training
               </Link>
             </div>
